@@ -10,6 +10,7 @@ gem 'rails', '~> 5.0.6'
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
 gem 'pg'
+# gem 'mysql', '~> 2.9', '>= 2.9.1'
 gem 'active_model_serializers'
 gem 'activerecord-reset-pk-sequence'
 
@@ -17,6 +18,8 @@ gem 'activerecord-reset-pk-sequence'
 gem 'puma', '~> 3.0'
 
 gem 'haml-rails'
+# gem 'bootsrap-sass'# , '3.3.6'
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -29,6 +32,8 @@ gem 'coffee-rails', '~> 4.2'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+gem 'jquery-ui-rails'
+
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -38,8 +43,6 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-# gem 'bootsrap-sass'# , '3.3.6'
-gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -48,6 +51,10 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+
+  # Лучше отображает ошибки
+  gem "better_errors"
+  gem "binding_of_caller"
 end
 
 group :development do
